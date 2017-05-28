@@ -452,7 +452,7 @@ text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav .flex-prev{
-background: url(images/arrow_left.png) center no-repeat;
+background: url(../img/arrow_left.png) center no-repeat;
 background-size: 40% 40%;
 height:150px;
 width:80px;
@@ -461,7 +461,7 @@ left:40px;
 margin-left: -8px;
 }
 .flex-direction-nav .flex-next{
-background: url(images/arrow_right.png) center no-repeat;
+background: url(../img/arrow_right.png) center no-repeat;
 background-size: 40% 40%;
 height:150px;
 width:80px;
@@ -2745,12 +2745,6 @@ color:#D4B068!important;
 }
 .foot-copyright a:hover{
  color:#D4B068;
-}
- .navigation ul li a {
-color: #666;
-}
- .navigation ul li a, .navigation ul li a:link {
-color: #666;
 }
 .smaller .navigation ul.sub-menu li a:hover{
   color:#D4B068;
