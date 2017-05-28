@@ -13,43 +13,21 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 
     <script src="js/classie.js" type="text/javascript"></script>
-    
+    <script src="js/jquery.js" type="text/javascript"></script>
+
   </head>
 
-<!--
   <body id="page-top">
+
     <div class="overlayloader">
       <div class="loader">&nbsp;</div>
     </div>
-    <div class="header" id="header">
-      <div class="container clearfix">
-        <div id="logo">
-          <?php oneline_lite_the_custom_logo();
 
-          if(get_theme_mod('header_textcolor')!='blank'){
+    <script src="js/wow.js" type="text/javascript"></script>
+    <script src="js/jquery.bxslider.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="js/skrollr.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
 
-          if ( is_front_page() && is_home() ) : ?>
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <?php else : ?>
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <?php endif;
-          $description = get_bloginfo( 'description', 'display' );
-          if ( $description || is_customize_preview() ) : ?>
-          <p class="site-description"><?php echo $description; ?></p>
-          <?php endif;  } ?>
-        </div>
-        <div id="main-menu-wrapper">
-          <a href="#" id="pull" class="toggle-mobile-menu"></a>
-          <nav class="navigation clearfix mobile-menu-wrapper">
-            <?php if ( is_page_template( 'home-template.php' ) ) :
-            oneline_lite_nav_menu();
-            else:
-            oneline_lite_front_nav_menu();
-            endif;
-            ?>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
--->
+  </body>
+</html>
