@@ -4897,3 +4897,7 @@ height: auto;
     z-index: 0;
     display: block;
 }
+
+svg {
+  fill: #f7f7f7;
+}
