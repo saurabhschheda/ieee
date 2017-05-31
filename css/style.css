@@ -924,7 +924,7 @@ margin-right: -10%;
 }
 /*----end slider style--------*/
 section.svg_enable{
-padding-bottom:180px;
+padding-bottom:50px;
 }
 /*start svg style*/
 .svg-top-container{
@@ -987,7 +987,7 @@ z-index:4;
 }
 /*end svg style*/
 section{
-padding-top: 120px;
+padding-top: 20px;
 padding-bottom: 120px;
 position: relative;
 }
@@ -1008,7 +1008,7 @@ text-align: center;
 display: block;
 float: left;
 width: 100%;
-padding-top:80px;
+padding-top:40px;
 }
 .service-block ul li,.service-block ul
 {
@@ -3653,7 +3653,7 @@ margin: -50px 0px 0px -50px;
  display: block;
     float: left;
     width: 100%;
-    padding-top:100px;
+    padding-top:50px;
 }
 .service-block ul li,.service-block ul
 {
@@ -3920,7 +3920,7 @@ font-size:26px;
 
     float: none;
     width: 80%;
-    padding-top: 80px;
+    padding-top: 40px;
     margin:0 auto;
 }
 .service-block ul li,.service-list ul
