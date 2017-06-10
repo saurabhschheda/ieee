@@ -1,19 +1,20 @@
  jQuery(document).ready(function() {
  "use strict";
 // Dropdown menu
+    seeMore();
     function thDropdownMenu() {
         var wWidth = jQuery(window).width();
         if(wWidth > 1024) {
             jQuery('.navigation ul.sub-menu, .navigation ul.children').hide();
             var timer;
             var delay = 100;
-            jQuery('.navigation li').hover( 
+            jQuery('.navigation li').hover(
               function() {
                 var $this = jQuery(this);
                 timer = setTimeout(function() {
                     $this.children('ul.sub-menu, ul.children').slideDown('fast');
                 }, delay);
-                
+
               },
               function() {
                 jQuery(this).children('ul.sub-menu, ul.children').hide();
@@ -48,8 +49,8 @@
 // Show-hide Scroll to top & move-to-top arrow
 
   jQuery("body").prepend("<a id='move-to-top' class='animate ' href='#header'><i class=''></i></a>");
-    
-  var scrollDes = 'html,body';  
+
+  var scrollDes = 'html,body';
   /*Opera does a strange thing if we use 'html' and 'body' together so my solution is to do the UA sniffing thing*/
   if(navigator.userAgent.match(/opera/i)){
     scrollDes = 'html';
@@ -98,7 +99,7 @@
         scrollToAnchor( target, event );
     }
   });
-  
+
 // Responsive Navigation
 
 // Responsive Navigation
@@ -112,13 +113,13 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
         if (themehunk_customscript.nav_menu == 'both') {
             jQuery('.navigation').not('.mobile-menu-wrapper').find('.menu').clone().appendTo('.mobile-menu-wrapper').hide();
         }
-    
+
         jQuery('.toggle-mobile-menu').click(function(e) {
             e.preventDefault();
             e.stopPropagation();
             jQuery('body').toggleClass('mobile-menu-active');
         });
-        
+
         // prevent propagation of scroll event to parent
         jQuery(document).on('DOMMouseScroll mousewheel', '.mobile-menu-wrapper', function(ev) {
             var $this = jQuery(this),
@@ -129,7 +130,7 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
                     ev.originalEvent.detail * -40 :
                     ev.originalEvent.wheelDelta),
                 up = delta > 0;
-        
+
             var prevent = function() {
                 ev.stopPropagation();
                 ev.preventDefault();
@@ -138,7 +139,7 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
             }
 
             if ( jQuery('a#pull').css('display') !== 'none' ) { // if toggle menu button is visible ( small screens )
-        
+
               if (!up && -delta > scrollHeight - height - scrollTop) {
                   // Scrolling down, but this will take us past the bottom.
                   $this.scrollTop(scrollHeight);
@@ -168,16 +169,16 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
                 header = document.querySelector("header");
             if (distanceY > shrinkOn) {
                 classie.add(header,"smaller");
-               
+
             } else {
                 if (classie.has(header,"smaller")) {
                     classie.remove(header,"smaller");
-                    
+
                 }
             }
         });
     }
-    
+
 /*scroll header function*/
     jQuery(window).scroll(function() {
         var scroll =jQuery(window).scrollTop();
@@ -189,8 +190,8 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
         }
     });
 
-    
-	
+
+
 	});
  /* start flex slider*/
 
@@ -199,11 +200,11 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
 
   });
  /* end flex slider*/
- 
+
  /*end scroll header function*/
  /*testimonials slider*/
  jQuery(window).load(function(){
-  jQuery('.bxslider').bxSlider({ 
+  jQuery('.bxslider').bxSlider({
      mode:'fade',
      auto: true,
      autoControls: true,
@@ -226,10 +227,10 @@ if (themehunk_customscript.responsive && themehunk_customscript.nav_menu != 'non
  // loader
 jQuery(".loader").fadeOut("slow");
   jQuery(".overlayloader").delay(1000).fadeOut("slow");
-  
+
 });
-                 
- 
+
+
 ///start pallaxx
  jQuery(function(){
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -237,35 +238,35 @@ jQuery(".loader").fadeOut("slow");
 
 
 ( function( $ ) {
-  
+
   // Setup variables
   $window = $(window);
   $body = $('body');
-  
-    //FadeIn all sections   
- 
+
+    //FadeIn all sections
+
   function adjustWindow(){
-    
+
     // Init Skrollr
     var s = skrollr.init({
         render: function(data) {
-        
+
             //Debugging - Log the current scroll position.
             //console.log(data.curTop);
         }
     });
-    
+
     // Get window size
       winH = $window.height();
-      
+
       // Keep minimum height 550
       if(winH <= 550) {
       winH = 550;
-    } 
-      
-      
+    }
+
+
   }
-    
+
 } )( jQuery );
 }
  else {
@@ -273,63 +274,77 @@ jQuery(".loader").fadeOut("slow");
 
 
 ( function( $ ) {
-  
+
   // Setup variables
   $window = $(window);
   $body = $('body');
-  
-    //FadeIn all sections   
+
+    //FadeIn all sections
   $body.imagesLoaded( function() {
     setTimeout(function() {
-          
+
           // Resize sections
           adjustWindow();
-          
+
           // Fade in sections
         $body.removeClass('loading').addClass('loaded');
-        
+
     }, 800);
   });
-  
+
   function adjustWindow(){
-    
+
     // Init Skrollr
     var s = skrollr.init({
         render: function(data) {
-        
+
             //Debugging - Log the current scroll position.
             //console.log(data.curTop);
         }
     });
-    
+
     // Get window size
       winH = $window.height();
-      
+
       // Keep minimum height 550
       if(winH <= 550) {
       winH = 550;
-    } 
-      
-      
+    }
+
+
   }
-    
+
 } )( jQuery );
     }
 });
 
 //move to top
-jQuery(document).ready(function(){ 
-    jQuery(window).scroll(function(){ 
-        if (jQuery(this).scrollTop() > 100) { 
-            jQuery('#scroll').fadeIn(); 
-        } else { 
-            jQuery('#scroll').fadeOut(); 
-        } 
-    }); 
-    jQuery('#scroll').click(function(){ 
-        jQuery("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
+jQuery(document).ready(function(){
+    jQuery(window).scroll(function(){
+        if (jQuery(this).scrollTop() > 100) {
+            jQuery('#scroll').fadeIn();
+        } else {
+            jQuery('#scroll').fadeOut();
+        }
+    });
+    jQuery('#scroll').click(function(){
+        jQuery("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
 });
 
+function seeMore() {
+  var noEvents = $('.post-list').length;
+  var viewPortWidth = $(window).width();
+  var numberShow = 4;
+  if (viewPortWidth <= 480) numberShow = 1;
+  else if (viewPortWidth <= 780) numberShow = 2;
 
+  var hiddenElements = $('.post-list.hidden');
+  for (var i = 0; i < Math.min(numberShow, hiddenElements.length); ++i) hiddenElements[i].setAttribute('class', 'post-list');
+
+  if ($('.post-list.hidden').length === 0) {
+    $('#events-see-more').addClass('disabled');
+    return;
+  }
+}
