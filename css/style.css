@@ -4909,3 +4909,34 @@ height: auto;
 .hidden {
   display: none !important;
 }
+
+
+.footer-list {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.footer-links {
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	font-size: 16px;
+}
+.footer-links:hover {
+	text-decoration: none;
+	color: #EF6910;
+	transition:.5s ease;
+}
+.divider {
+	color: #777;
+  margin: 0 0.5rem;
+}
+.copyright {
+	width: 175px;
+	margin: 25px auto;
+}
+#logo {
+	display: inline;
+	height: 100px;
+}
