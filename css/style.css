@@ -1584,6 +1584,7 @@ margin:0px 0%;
 width: 100%;
 text-align: center;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+background-color: #F7F7F7;
 }
 figure.team-content * {
 -webkit-box-sizing: border-box;
