@@ -163,7 +163,7 @@ a img.aligncenter {
 .slider .svg-top-container { fill: #f7f7f7 }
 .about-wrapper .svg-top-container { fill: #1f1f1f; }
 .news-wrapper .svg-top-container { fill: #f7f7f7 }
-.team-wrapper .svg-top-container { fill: #1F1F1F; }
+.team-wrapper .svg-top-container { fill: #3F3F3F; }
 .footer-wrapper .svg-top-container {
     fill: #fff;
 }
@@ -1118,7 +1118,7 @@ transition: all 1s ease;
 #join{
     display:block;
     overflow: hidden;
-    background-color: #1f1f1f;
+    background: linear-gradient(0deg, #111111, #3f3f3f);
 }
 #join {
 position: relative;
