@@ -1760,6 +1760,7 @@ figure.post-content figcaption {
 padding: 25px;
 position: relative;
 text-align: center;
+height: 165px;
 }
 figure.post-content .date,
 figure.post-content i {
@@ -4689,4 +4690,8 @@ height: auto;
 .icon {
   color: #FFFFFF;
   fill: #FFFFFF;
+}
+
+.roles li, .roles li ol li{
+    color: #1f1f1f;
 }
