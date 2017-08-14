@@ -161,7 +161,8 @@ a img.aligncenter {
     margin-right: auto
 }
 .slider .svg-top-container { fill: #f7f7f7 }
-.about-wrapper .svg-top-container { fill: #1f1f1f; }
+.about-us-wrapper .svg-top-container { fill: #1f1f1f; }
+.about-wrapper .svg-top-container { fill: #3f3f3f; }
 .news-wrapper .svg-top-container { fill: #f7f7f7 }
 .team-wrapper .svg-top-container { fill: #3F3F3F; }
 .footer-wrapper .svg-top-container {
@@ -4622,6 +4623,7 @@ height: auto;
   width: 80%;
   text-align: justify;
   margin: 10px auto;
+  color: #1F1F1F;
 }
 
 
