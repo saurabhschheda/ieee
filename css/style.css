@@ -181,15 +181,15 @@ background:#FFF;
 
 p,.service-content p{
 font-size: 1.02em;
-  color: #7D7D7D;
+  color: #1F1F1F;
   line-height: 1.6;
  }
 .service-title a {
 font-family: 'Roboto-Bold',sans-serif;
-font-size:14px;
+font-size:12px;
 color:#111;
 line-height: 1.5;
-letter-spacing: 1.5px;
+letter-spacing: 1px;
 }
 .clearfix {
 margin-top:0px;
